@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+.app-logo {
+  height: 180px;
+}
+
+.app-header {
+  background-color: #cdcdcd;
+  height: 180px;
+  padding: 20px;
+  color: white;
+}
+
+.kings-landing .village {
+  float: left;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
