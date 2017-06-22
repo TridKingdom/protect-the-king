@@ -6,15 +6,21 @@ import Villager from '../Villager/Villager';
 class Village extends Component {
   static defaultProps = {
     villageName: 'Village',
-    villagers: [1, 2, 3, 4, 5, 6],
+    villagers: [
+      {id: 1, isDead: false},
+      {id: 2, isDead: false},
+      {id: 3, isDead: false},
+      {id: 4, isDead: false},
+      {id: 5, isDead: false},
+      {id: 6, isDead: false},
+    ],
   }
 
   render () {
-
-    const villagers = this.props.villagers.map((villagerNo) => {
+    const villagers = this.props.villagers.map((villager) => {
       return (
-        <li className="village__house">
-          <Villager number={villagerNo} />
+        <li className="village__house" key={villager.id}>
+          <Villager id={villager.id} />
         </li>
       );
     });

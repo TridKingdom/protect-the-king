@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.png';
-import './App.css';
+import './VillagesPage.css';
+import Village from '../../components/Village/Village';
 
-import Village from './components/Village/Village';
-import Villager from './components/Villager/Villager';
-
-class App extends Component {
+class VillagesPage extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="app-header">
-          <img src={logo} className="app-logo" alt="TridKingdom" />
-        </div>
+      <div className="VillagesPage">
+       <h2>VillagesPage</h2>
         <div className="kings-landing">
           <Village villageName={'UK'}/>
           <Village villageName={'France'}/>
@@ -27,4 +22,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default VillagesPage;
