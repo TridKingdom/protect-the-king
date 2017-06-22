@@ -5,6 +5,8 @@ import { Provider } from 'react-redux';
 import { configureStore } from './store';
 import routes from './routes';
 import registerServiceWorker from './registerServiceWorker';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
 import './index.css';
 
 const store = configureStore();

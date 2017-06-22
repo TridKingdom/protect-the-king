@@ -7,7 +7,7 @@ class VillagesPage extends Component {
     return (
       <div className="VillagesPage">
        <h2>VillagesPage</h2>
-        <div className="kings-landing">
+        <div className="kings-landing clearfix">
           <Village villageName={'UK'}/>
           <Village villageName={'France'}/>
           <Village villageName={'Germany'}/>
